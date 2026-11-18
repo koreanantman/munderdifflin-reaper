@@ -3,6 +3,8 @@
 Small, office-themed tools for sound design in [REAPER](https://www.reaper.fm).
 Interoffice memos, rubber stamps, binders on a shelf and a rotary phone at the front desk.
 
+![Munder Difflin tools in REAPER](docs/screenshot.png)
+
 | Tool | What it does |
 |---|---|
 | **Reception** | The front desk. Dial 1-4 to open a tool, 5-9 for your own custom dials, 0 for the operator. |
