@@ -10,7 +10,7 @@ Interoffice memos, rubber stamps, binders on a shelf and a rotary phone at the f
 | **Stapler** | Lines up the first transient of every selected layer, with an optional offset. |
 | **Copier** | Copies audio into MIDI. Five modes: ALL, CHORDS, MELODY, BASS, HITS. |
 | **Binder** | Files track templates, FX chains and audio into binders, tabs and sections. Drag them straight onto tracks. |
-| **Munder Difflin** | The business card. Credits, orientation, and settings shared by every tool. |
+| **Munder Difflin** | Credits, orientation, and settings shared by every tool. |
 
 ## Workflow
 
