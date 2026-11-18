@@ -12,6 +12,46 @@ Interoffice memos, rubber stamps, binders on a shelf and a rotary phone at the f
 | **Binder** | Files track templates, FX chains and audio into binders, tabs and sections. Drag them straight onto tracks. |
 | **Munder Difflin** | The business card. Credits, orientation, and settings shared by every tool. |
 
+## Workflow
+
+A typical session, start to finish:
+
+1. **Open the launcher.** Run **Reception** (best bound to a key). Click a hole or press 1-4 to open a tool.
+   Holes 5-9 can hold any REAPER action you use often (right-click a hole to assign one).
+2. **Make raw material with Shredder.** Select one or more audio items, set how many fragments you want,
+   their min/max length and the strength of the variation, then press **SHRED**. Fragments land on a new
+   track below the source, each with its own pitch, speed, gain and pan movement. Shift+SHRED re-rolls.
+3. **Stack layers with Stapler.** Select the items you want to layer (one per track works best) and press
+   **STAMP!**. Their first transients line up with the top layer; the Offset knob staggers each next layer
+   by a few milliseconds for a looser, thicker hit.
+4. **Pull MIDI out of audio with Copier.** Select audio, pick a mode and press **COPY**. A MIDI item appears
+   on a new track below:
+   - **ALL**: every peak, overtones included (texture, experiments)
+   - **CHORDS**: fundamentals only, several at once (pads, guitar, piano)
+   - **MELODY**: one note at a time (voice, whistle, lead)
+   - **BASS**: the lowest note only
+   - **HITS**: note 36 on every transient, ready to trigger drum samples
+5. **Keep what works with Binder.** Select items or tracks and press **FILE IT**:
+   items are saved as WAV copies, tracks as track templates or FX chains (you pick which plugins).
+   Organize everything into binders, tabs and sections, search, sort and preview audio.
+   Drag a paper onto a track to use it again (or double-click it to use it on the selected track).
+   You can also drop audio files from anywhere (file browser, samplers) onto the Binder window.
+6. **Adjust settings on the card.** Open **Munder Difflin** (or dial 0 in Reception) and turn the card over
+   to change the size of every tool, switch lettering, clear custom dials or reset window positions.
+
+### Shortcuts
+
+| Where | Key / action | Does |
+|---|---|---|
+| All tools | Drag a value up/down (Shift = fine), mouse wheel, double-click to type | Change a value |
+| All tools | Enter | Run the tool's main button |
+| All tools | Esc | Close |
+| Shredder | Shift+Enter or Shift+click SHRED | Re-roll the last result |
+| Binder | Ctrl+Z / Ctrl+F / Ctrl+A / Del | Undo / search / select all / shred selection |
+| Binder | Shift-click, Ctrl-click | Select a range, add to selection |
+| Binder | Space, click the waveform | Preview audio (SWS: in place) |
+| Reception | 1-9, 0 | Dial |
+
 ## Install (ReaPack)
 
 1. In REAPER: **Extensions > ReaPack > Import repositories...**
