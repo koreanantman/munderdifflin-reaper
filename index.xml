@@ -3,21 +3,23 @@
   <category name="Munder Difflin">
     <reapack name="munderdifflin_Reception.lua" type="script" desc="Munder Difflin office tools (Reception, Shredder, Stapler, Copier, Binder)">
       <metadata>
-        <description><![CDATA[# Munder Difflin
-Small, office-themed tools for sound design in REAPER.
-
-- Reception: the front desk. Dial 1-4 to open a tool, 5-9 for custom dials, 0 for the operator.
-- Shredder: grinds selected audio into randomized, automated fragments.
-- Stapler: lines up the first transient of every layer, with an offset.
-- Copier: turns audio into MIDI (ALL, CHORDS, MELODY, BASS, HITS).
-- Binder: files track templates, FX chains and audio; drag them onto tracks.
-- Munder Difflin: the business card. Credits, orientation and shared settings.
-
-Tip: bind Reception to a key. When REAPER asks about the already running instance,
-choose "Terminate instances" + "Remember" and the same key opens/closes it.]]></description>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}}\f0\fs20
+{\b\fs28 Munder Difflin}\par
+Small, office-themed tools for sound design in REAPER.\par
+\par
+- Reception: the front desk. Dial 1-4 to open a tool, 5-9 for custom dials, 0 for the operator.\par
+- Shredder: grinds selected audio into randomized, automated fragments.\par
+- Stapler: lines up the first transient of every layer, with an offset.\par
+- Copier: turns audio into MIDI (ALL, CHORDS, MELODY, BASS, HITS).\par
+- Binder: files track templates, FX chains and audio; drag them onto tracks.\par
+- Munder Difflin: the business card. Credits, orientation and shared settings.\par
+\par
+Tip: bind Reception to a key. When REAPER asks about the already running instance,\par
+choose "Terminate instances" + "Remember" and the same key opens/closes it.\par
+}]]></description>
         <link rel="website">https://github.com/koreanantman/munderdifflin-reaper</link>
       </metadata>
-      <version name="1.0.0" author="Byungkyu Lee" time="2026-11-18T14:47:25Z">
+      <version name="1.0.0" author="Byungkyu Lee" time="2026-11-19T00:44:53Z">
         <changelog><![CDATA[First release]]></changelog>
         <source main="main" file="munderdifflin_Reception.lua">https://github.com/koreanantman/munderdifflin-reaper/raw/c57c7f945e07b33d346936c8e395b2eb9069ef05/Munder%20Difflin/munderdifflin_Reception.lua</source>
         <source main="main" file="munderdifflin_Shredder.lua">https://github.com/koreanantman/munderdifflin-reaper/raw/c57c7f945e07b33d346936c8e395b2eb9069ef05/Munder%20Difflin/munderdifflin_Shredder.lua</source>

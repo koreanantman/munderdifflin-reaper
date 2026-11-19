@@ -21,6 +21,24 @@ def block(name):
 
 provides = [l.split("]", 1)[1].strip() if "]" in l else l.strip() for l in block("provides") if l.strip()]
 about = "\n".join(block("about")).strip()
+
+# ReaPack shows the package description as RTF (reapack-index normally converts Markdown with pandoc)
+def rtf(md):
+    def esc(t):
+        t = t.replace("\\", "\\\\").replace("{", "\\{").replace("}", "\\}")
+        return "".join(c if ord(c) < 128 else "\\u%d?" % ord(c) for c in t)
+    out = [r"{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}}\f0\fs20"]
+    for line in md.splitlines():
+        line = line.rstrip()
+        if line.startswith("#"):
+            out.append(r"{\b\fs28 " + esc(line.lstrip("#").strip()) + r"}\par")
+        elif line == "":
+            out.append(r"\par")
+        else:
+            out.append(esc(line) + r"\par")
+    out.append("}")
+    return "\n".join(out)
+about = rtf(about)
 def url(f):
     return f"https://github.com/{OWNER_REPO}/raw/{sha}/" + urllib.parse.quote(f"{CATEGORY}/{f}")
 
